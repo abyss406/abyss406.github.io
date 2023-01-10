@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Liun常用命令 | 一名萌新程序员的博客</title>
+  <meta name="keywords" content=" Liunx命令 ">
+  <meta name="description" content="Liun常用命令 | 一名萌新程序员的博客">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="1.系统命令查询ip地址ip a ip addr  ping网络测试连通ip 目标ip地址 ping 目标网址  查询系统时间date  注销logout  重启reboot  清屏clean  2.文件管理命令查看文件列表# 查看当前目录下的文件列表 ls # 查看指定目录文件列表 ls &#x2F;date # 查看详细信息（用户、组、大小、创建时间、权限信息、文件类型） ls -l # 查看隐藏文件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Liun常用命令">
+<meta property="og:url" content="http://example.com/2023/01/10/Liun%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:site_name" content="一名萌新程序员的博客">
+<meta property="og:description" content="1.系统命令查询ip地址ip a ip addr  ping网络测试连通ip 目标ip地址 ping 目标网址  查询系统时间date  注销logout  重启reboot  清屏clean  2.文件管理命令查看文件列表# 查看当前目录下的文件列表 ls # 查看指定目录文件列表 ls &#x2F;date # 查看详细信息（用户、组、大小、创建时间、权限信息、文件类型） ls -l # 查看隐藏文件">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-01-10T04:57:18.000Z">
+<meta property="article:modified_time" content="2023-01-10T04:58:23.371Z">
+<meta property="article:author" content="bayss406">
+<meta property="article:tag" content="Liunx命令">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/235.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/235.jpg"/>
+</a>
+<div class="author">
+    <span>bayss406</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="email"
+               href="mailto:592411793@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=592411793&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(2)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="Docker">
+                        
+                        Docker
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Liunx">
+                        
+                        Liunx
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+        <a 
+                                           class="friends">友链</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="2">
+<input type="hidden" id="yelog_site_word_count" value="1.1k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker命令</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Liunx命令</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 Liunx "
+           href="/2023/01/10/Liun%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="Liunx命令"
+           data-author="" >
+            <span class="post-title" title="Liun常用命令">Liun常用命令</span>
+            <span class="post-date" title="2023-01-10 12:57:18">2023/01/10</span>
+        </a>
+        
+        
+        <a  class="全部文章 Docker "
+           href="/2023/01/10/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"
+           data-tag="Docker命令"
+           data-author="" >
+            <span class="post-title" title="Docker常用命令">Docker常用命令</span>
+            <span class="post-date" title="2023-01-10 12:50:24">2023/01/10</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Liun常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Liun常用命令</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Liunx">Liunx</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">Liunx命令</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-01-10 12:58:23'>2023-01-10 12:57</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:697</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4"><span class="toc-text">1.系统命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2ip%E5%9C%B0%E5%9D%80"><span class="toc-text">查询ip地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ping%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E8%BF%9E%E9%80%9A"><span class="toc-text">ping网络测试连通</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4"><span class="toc-text">查询系统时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%94%80"><span class="toc-text">注销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AF"><span class="toc-text">重启</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E5%B1%8F"><span class="toc-text">清屏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4"><span class="toc-text">2.文件管理命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8"><span class="toc-text">查看文件列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95"><span class="toc-text">切换目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E5%91%BD%E4%BB%A4%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95"><span class="toc-text">查看当前命令所在目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">删除文件&#x2F;文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">拷贝文件&#x2F;文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">新建文件&#x2F;文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">移动文件&#x2F;文件夹</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4"><span class="toc-text">3.文本内容查看命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE"><span class="toc-text">4.文件查找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86"><span class="toc-text">5.系统管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="toc-text">6.压缩解压缩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-yum%E5%91%BD%E4%BB%A4"><span class="toc-text">7.yum命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-text">8.防火墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E5%90%8D"><span class="toc-text">9.查看主机名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%85%E8%A6%81%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-text">必要软件安装</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-系统命令"><a href="#1-系统命令" class="headerlink" title="1.系统命令"></a>1.系统命令</h2><h3 id="查询ip地址"><a href="#查询ip地址" class="headerlink" title="查询ip地址"></a>查询ip地址</h3><pre><code>ip a
+ip addr
+</code></pre>
+<h3 id="ping网络测试连通"><a href="#ping网络测试连通" class="headerlink" title="ping网络测试连通"></a>ping网络测试连通</h3><pre><code>ip 目标ip地址
+ping 目标网址
+</code></pre>
+<h3 id="查询系统时间"><a href="#查询系统时间" class="headerlink" title="查询系统时间"></a>查询系统时间</h3><pre><code>date
+</code></pre>
+<h3 id="注销"><a href="#注销" class="headerlink" title="注销"></a>注销</h3><pre><code>logout
+</code></pre>
+<h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><pre><code>reboot
+</code></pre>
+<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><pre><code>clean
+</code></pre>
+<h2 id="2-文件管理命令"><a href="#2-文件管理命令" class="headerlink" title="2.文件管理命令"></a>2.文件管理命令</h2><h3 id="查看文件列表"><a href="#查看文件列表" class="headerlink" title="查看文件列表"></a>查看文件列表</h3><pre><code># 查看当前目录下的文件列表
+ls
+# 查看指定目录文件列表
+ls /date
+# 查看详细信息（用户、组、大小、创建时间、权限信息、文件类型）
+ls -l
+# 查看隐藏文件
+ls -a
+# 参数并用
+ls -la
+</code></pre>
+<h3 id="切换目录"><a href="#切换目录" class="headerlink" title="切换目录"></a>切换目录</h3><pre><code>cd 目标文件夹
+</code></pre>
+<h3 id="查看当前命令所在目录"><a href="#查看当前命令所在目录" class="headerlink" title="查看当前命令所在目录"></a>查看当前命令所在目录</h3><pre><code>pwd
+</code></pre>
+<h3 id="删除文件-x2F-文件夹"><a href="#删除文件-x2F-文件夹" class="headerlink" title="删除文件&#x2F;文件夹"></a>删除文件&#x2F;文件夹</h3><pre><code>rm 文件名
+rm -r 文件夹
+# 强制删除不询问
+rm -rf 文件 
+</code></pre>
+<h3 id="拷贝文件-x2F-文件夹"><a href="#拷贝文件-x2F-文件夹" class="headerlink" title="拷贝文件&#x2F;文件夹"></a>拷贝文件&#x2F;文件夹</h3><pre><code>cp 原文件 新文件
+cp -r 原文件夹 新文件夹
+</code></pre>
+<h3 id="新建文件-x2F-文件夹"><a href="#新建文件-x2F-文件夹" class="headerlink" title="新建文件&#x2F;文件夹"></a>新建文件&#x2F;文件夹</h3><pre><code># 在当前目录下创建文件夹
+mkdir 文件夹名
+# 在指定目录 创建文件夹并创建父文件夹
+mkdir -p /路径/路径/文件夹名
+# 在当前目录创建文件
+touch 文件名	 
+</code></pre>
+<h3 id="移动文件-x2F-文件夹"><a href="#移动文件-x2F-文件夹" class="headerlink" title="移动文件&#x2F;文件夹"></a>移动文件&#x2F;文件夹</h3><pre><code># 移动原文件到目标文件夹中
+mv 文件 文件夹	
+# 修改文件A的名字为文件B
+mv 文件A 文件B	
+</code></pre>
+<h2 id="3-文本内容查看命令"><a href="#3-文本内容查看命令" class="headerlink" title="3.文本内容查看命令"></a>3.文本内容查看命令</h2><pre><code># 查看文件中的全部信息
+cat 文件名
+# 以分页的方式浏览文件信息
+less
+#	浏览模式快捷键
+⬆️	# 上一行
+⬇️	# 下一行
+G		# 最后一页
+g		# 第一页
+空格 # 下一页
+/关键词	# 搜索关键词
+# 退出浏览模式
+q
+</code></pre>
+<h2 id="4-文件查找"><a href="#4-文件查找" class="headerlink" title="4.文件查找"></a>4.文件查找</h2><pre><code>find 搜索路径 -name &quot;文件名关键词&quot;
+# 例 find /root/test -name &quot;config.json&quot;
+</code></pre>
+<h2 id="5-系统管理"><a href="#5-系统管理" class="headerlink" title="5.系统管理"></a>5.系统管理</h2><pre><code># 静态查看系统进程
+ps -aux
+
+# 实时查看系统进程
+top  # q 退出
+
+# 关闭进程
+kill 进程id
+
+# 强制关闭进程
+kill -9 进程
+</code></pre>
+<h2 id="6-压缩解压缩"><a href="#6-压缩解压缩" class="headerlink" title="6.压缩解压缩"></a>6.压缩解压缩</h2><pre><code>压缩：tar -zcvf 压缩后文件名 被压缩文件
+解压缩：tar -zxvf 压缩文件名 -C 解压缩文件所在目录	
+-C # 指定解压后的文件存放位置
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-z</td>
+<td align="center">操作tar.gz文件需要使用</td>
+</tr>
+<tr>
+<td align="center">-x</td>
+<td align="center">解压缩</td>
+</tr>
+<tr>
+<td align="center">-c</td>
+<td align="center">压缩</td>
+</tr>
+<tr>
+<td align="center">-v</td>
+<td align="center">显示压缩或者解压缩的执行过程信息</td>
+</tr>
+<tr>
+<td align="center">-f</td>
+<td align="center">要处理的文件file，必须放在最后</td>
+</tr>
+</tbody></table>
+<h2 id="7-yum命令"><a href="#7-yum命令" class="headerlink" title="7.yum命令"></a>7.yum命令</h2><pre><code># 列出所有可安装的软件包
+yum list
+# 安装软件
+yum install -y 软件名
+# 卸载软件
+yum remove 软件名
+# 查找软件包
+yum search all 软件名
+</code></pre>
+<h2 id="8-防火墙"><a href="#8-防火墙" class="headerlink" title="8.防火墙"></a>8.防火墙</h2><pre><code># 开启防火墙
+systemctl start 服务名
+# 关闭防火期（服务器重启还是会自动开启）
+systemctl stop firewalld 
+# 禁止防火墙开机启动
+systemctl disable firewlld
+</code></pre>
+<h2 id="9-查看主机名"><a href="#9-查看主机名" class="headerlink" title="9.查看主机名"></a>9.查看主机名</h2><pre><code>hostname
+# 设置主机名
+hostnamectl set-hostname 主机名
+</code></pre>
+<h3 id="必要软件安装"><a href="#必要软件安装" class="headerlink" title="必要软件安装"></a>必要软件安装</h3><p>1.vim（vi增强版）</p>
+<pre><code>vim 文件名
+</code></pre>
+<p>2.wget(下载器)</p>
+<pre><code>wget url
+</code></pre>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 592411793@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2023 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+    #post .pjax article :not(pre) > code {
+        color: #24292e;
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+        background-color: rgba(27,31,35,.05);
+        border-radius: 3px;
+        font-size: 85%;
+        margin: 0;
+        padding: .2em .4em;
+    }
+    
+</style>
+
+
+
+
+
+
+
+</html>

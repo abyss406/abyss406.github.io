@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>一名萌新程序员的博客</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="一名萌新程序员的博客">
+  <title>Docker常用命令 | 一名萌新程序员的博客</title>
+  <meta name="keywords" content=" Docker命令 ">
+  <meta name="description" content="Docker常用命令 | 一名萌新程序员的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="1.系统命令查询ip地址ip a ip addr  ping网络测试连通ip 目标ip地址 ping 目标网址  查询系统时间date  注销logout  重启reboot  清屏clean  2.文件管理命令查看文件列表# 查看当前目录下的文件列表 ls # 查看指定目录文件列表 ls &#x2F;date # 查看详细信息（用户、组、大小、创建时间、权限信息、文件类型） ls -l # 查看隐藏文件">
 <meta property="og:type" content="article">
@@ -57,7 +57,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -250,12 +250,60 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-Docker常用命令" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hi"><span class="toc-text">hi!</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E6%98%AF%E4%B8%80%E5%90%8D%E6%AD%A3%E5%9C%A8%E5%AD%A6%E4%B9%A0%E7%8B%AC%E7%AB%8B%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%9A%84%E8%90%8C%E6%96%B0%E7%A8%8B%E5%BA%8F%E5%91%98"><span class="toc-text">我是一名正在学习独立游戏开发的萌新程序员</span></a></li></ol></li></ol>
+        <h1 class="article-title">Docker常用命令</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Docker">Docker</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">Docker命令</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-01-10 12:56:07'>2023-01-10 12:50</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:403</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%95%9C%E5%83%8F%E7%9B%B8%E5%85%B3"><span class="toc-text">镜像相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%95%9C%E5%83%8F%E5%88%97%E8%A1%A8"><span class="toc-text">查看镜像列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%95%9C%E5%83%8F%E6%90%9C%E7%B4%A2"><span class="toc-text">镜像搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%89%E5%8F%96%E9%95%9C%E5%83%8F"><span class="toc-text">拉取镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E9%95%9C%E5%83%8F"><span class="toc-text">删除镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E5%AD%98%E9%95%9C%E5%83%8F"><span class="toc-text">保存镜像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A0%E8%BD%BD%E9%95%9C%E5%83%8F"><span class="toc-text">加载镜像</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E7%9B%B8%E5%85%B3"><span class="toc-text">容器相关</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E5%88%97%E8%A1%A8"><span class="toc-text">容器列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E5%AE%B9%E5%99%A8"><span class="toc-text">创建容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2%E5%AE%B9%E5%99%A8"><span class="toc-text">停止容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E5%AE%B9%E5%99%A8"><span class="toc-text">删除容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9B%E5%85%A5%E8%BF%90%E8%A1%8C%E4%B8%AD%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-text">进入运行中的容器</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -268,13 +316,89 @@
     }
 </style>
 </div>
-            <h1 id="hi"><a href="#hi" class="headerlink" title="hi!"></a>hi!</h1><h2 id="我是一名正在学习独立游戏开发的萌新程序员"><a href="#我是一名正在学习独立游戏开发的萌新程序员" class="headerlink" title="我是一名正在学习独立游戏开发的萌新程序员"></a>我是一名正在学习独立游戏开发的萌新程序员</h2><p>非常喜欢玩像素独立小游戏 所以希望有天能做出属于自己的游戏。<br>这个博客记录一些学习笔记跟遇到的各种问题和解决方法。<br>也会记录游戏开发日志</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>时不时的会使用docker 所有整理(复制粘贴)一下常用命令。</p>
+<h2 id="镜像相关"><a href="#镜像相关" class="headerlink" title="镜像相关"></a>镜像相关</h2><h3 id="查看镜像列表"><a href="#查看镜像列表" class="headerlink" title="查看镜像列表"></a>查看镜像列表</h3><pre><code>docker images
+</code></pre>
+<h3 id="镜像搜索"><a href="#镜像搜索" class="headerlink" title="镜像搜索"></a>镜像搜索</h3><pre><code>docker search 镜像名
+</code></pre>
+<h3 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h3><pre><code>docker pull 镜像名
+docker pull:Tag 镜像名
+</code></pre>
+<h3 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h3><pre><code>docker rmi -f 镜像名/镜像ID
+</code></pre>
+<h3 id="保存镜像"><a href="#保存镜像" class="headerlink" title="保存镜像"></a>保存镜像</h3><p>将镜像保存为tar压缩文件 方便在任意安装了docker的电脑&#x2F;服务器上加载这个镜像</p>
+<pre><code>docker save 镜像名/镜像ID -o 镜像目录/镜像名字
+</code></pre>
+<h3 id="加载镜像"><a href="#加载镜像" class="headerlink" title="加载镜像"></a>加载镜像</h3><pre><code>docker load -i 镜像保存文件位置
+</code></pre>
+<h2 id="容器相关"><a href="#容器相关" class="headerlink" title="容器相关"></a>容器相关</h2><h3 id="容器列表"><a href="#容器列表" class="headerlink" title="容器列表"></a>容器列表</h3><pre><code>docker ps
+docker ps -a # 查看所有容器——包括运行中和停止的容器
+</code></pre>
+<h3 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h3><pre><code>docker run -it -d --name 名字 -p 宿主机端口:容器端口 -v 宿主机文件存储位置:容器内文件位置 镜像名:Tag /bin/bash
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="center">参数</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-it</td>
+<td align="center">表示与容器进行交互式启动</td>
+</tr>
+<tr>
+<td align="center">-d</td>
+<td align="center">表示可后台运行容器（守护式容器）</td>
+</tr>
+<tr>
+<td align="center">–name</td>
+<td align="center">给运要行的容器起的名字</td>
+</tr>
+<tr>
+<td align="center">&#x2F;bin&#x2F;bash</td>
+<td align="center">交互路径</td>
+</tr>
+<tr>
+<td align="center">-p</td>
+<td align="center">将容器的端口映射到宿主机上，通过宿主机访问内部端口</td>
+</tr>
+<tr>
+<td align="center">-v</td>
+<td align="center">将容器内的指定文件夹挂载到宿主机对于的位置</td>
+</tr>
+</tbody></table>
+<h3 id="停止容器"><a href="#停止容器" class="headerlink" title="停止容器"></a>停止容器</h3><pre><code>docker stop 容器名/容器ID
+</code></pre>
+<h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><pre><code># 删除一个容器
+docker rm -f 容器名/容器ID
+# 删除多个容器
+docker rm -f 容器名1/容器ID1 容器名2/容器ID2 容器名3/容器ID3
+# 删除全部容器
+docker rm -f $(docker ps -aq)
+</code></pre>
+<h3 id="进入运行中的容器"><a href="#进入运行中的容器" class="headerlink" title="进入运行中的容器"></a>进入运行中的容器</h3><pre><code>docker attach 容器名/容器ID
+</code></pre>
 
-        </article>
-        
-        
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 592411793@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -283,11 +407,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 </body>

@@ -4,13 +4,50 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/01/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
-      <url>/2023/01/09/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/</url>
+      <title>Liun常用命令</title>
+      <link href="/2023/01/10/Liun%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/01/10/Liun%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
       
-        <content type="html"><![CDATA[<p>title: 第一篇博客文章</p><p>date: 2017-03-23 15:13:47</p><p>正在学习各种知识 主要以独立游戏开发位置 学习C#、unity、像素画</p><p>希望有天能做出自己的独立游戏</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="1-系统命令"><a href="#1-系统命令" class="headerlink" title="1.系统命令"></a>1.系统命令</h2><h3 id="查询ip地址"><a href="#查询ip地址" class="headerlink" title="查询ip地址"></a>查询ip地址</h3><pre><code>ip aip addr</code></pre><h3 id="ping网络测试连通"><a href="#ping网络测试连通" class="headerlink" title="ping网络测试连通"></a>ping网络测试连通</h3><pre><code>ip 目标ip地址ping 目标网址</code></pre><h3 id="查询系统时间"><a href="#查询系统时间" class="headerlink" title="查询系统时间"></a>查询系统时间</h3><pre><code>date</code></pre><h3 id="注销"><a href="#注销" class="headerlink" title="注销"></a>注销</h3><pre><code>logout</code></pre><h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><pre><code>reboot</code></pre><h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><pre><code>clean</code></pre><h2 id="2-文件管理命令"><a href="#2-文件管理命令" class="headerlink" title="2.文件管理命令"></a>2.文件管理命令</h2><h3 id="查看文件列表"><a href="#查看文件列表" class="headerlink" title="查看文件列表"></a>查看文件列表</h3><pre><code># 查看当前目录下的文件列表ls# 查看指定目录文件列表ls /date# 查看详细信息（用户、组、大小、创建时间、权限信息、文件类型）ls -l# 查看隐藏文件ls -a# 参数并用ls -la</code></pre><h3 id="切换目录"><a href="#切换目录" class="headerlink" title="切换目录"></a>切换目录</h3><pre><code>cd 目标文件夹</code></pre><h3 id="查看当前命令所在目录"><a href="#查看当前命令所在目录" class="headerlink" title="查看当前命令所在目录"></a>查看当前命令所在目录</h3><pre><code>pwd</code></pre><h3 id="删除文件-x2F-文件夹"><a href="#删除文件-x2F-文件夹" class="headerlink" title="删除文件&#x2F;文件夹"></a>删除文件&#x2F;文件夹</h3><pre><code>rm 文件名rm -r 文件夹# 强制删除不询问rm -rf 文件 </code></pre><h3 id="拷贝文件-x2F-文件夹"><a href="#拷贝文件-x2F-文件夹" class="headerlink" title="拷贝文件&#x2F;文件夹"></a>拷贝文件&#x2F;文件夹</h3><pre><code>cp 原文件 新文件cp -r 原文件夹 新文件夹</code></pre><h3 id="新建文件-x2F-文件夹"><a href="#新建文件-x2F-文件夹" class="headerlink" title="新建文件&#x2F;文件夹"></a>新建文件&#x2F;文件夹</h3><pre><code># 在当前目录下创建文件夹mkdir 文件夹名# 在指定目录 创建文件夹并创建父文件夹mkdir -p /路径/路径/文件夹名# 在当前目录创建文件touch 文件名 </code></pre><h3 id="移动文件-x2F-文件夹"><a href="#移动文件-x2F-文件夹" class="headerlink" title="移动文件&#x2F;文件夹"></a>移动文件&#x2F;文件夹</h3><pre><code># 移动原文件到目标文件夹中mv 文件 文件夹# 修改文件A的名字为文件Bmv 文件A 文件B</code></pre><h2 id="3-文本内容查看命令"><a href="#3-文本内容查看命令" class="headerlink" title="3.文本内容查看命令"></a>3.文本内容查看命令</h2><pre><code># 查看文件中的全部信息cat 文件名# 以分页的方式浏览文件信息less#浏览模式快捷键⬆️# 上一行⬇️# 下一行G# 最后一页g# 第一页空格 # 下一页/关键词# 搜索关键词# 退出浏览模式q</code></pre><h2 id="4-文件查找"><a href="#4-文件查找" class="headerlink" title="4.文件查找"></a>4.文件查找</h2><pre><code>find 搜索路径 -name &quot;文件名关键词&quot;# 例 find /root/test -name &quot;config.json&quot;</code></pre><h2 id="5-系统管理"><a href="#5-系统管理" class="headerlink" title="5.系统管理"></a>5.系统管理</h2><pre><code># 静态查看系统进程ps -aux# 实时查看系统进程top  # q 退出# 关闭进程kill 进程id# 强制关闭进程kill -9 进程</code></pre><h2 id="6-压缩解压缩"><a href="#6-压缩解压缩" class="headerlink" title="6.压缩解压缩"></a>6.压缩解压缩</h2><pre><code>压缩：tar -zcvf 压缩后文件名 被压缩文件解压缩：tar -zxvf 压缩文件名 -C 解压缩文件所在目录-C # 指定解压后的文件存放位置</code></pre><table><thead><tr><th align="center">参数</th><th align="center">描述</th></tr></thead><tbody><tr><td align="center">-z</td><td align="center">操作tar.gz文件需要使用</td></tr><tr><td align="center">-x</td><td align="center">解压缩</td></tr><tr><td align="center">-c</td><td align="center">压缩</td></tr><tr><td align="center">-v</td><td align="center">显示压缩或者解压缩的执行过程信息</td></tr><tr><td align="center">-f</td><td align="center">要处理的文件file，必须放在最后</td></tr></tbody></table><h2 id="7-yum命令"><a href="#7-yum命令" class="headerlink" title="7.yum命令"></a>7.yum命令</h2><pre><code># 列出所有可安装的软件包yum list# 安装软件yum install -y 软件名# 卸载软件yum remove 软件名# 查找软件包yum search all 软件名</code></pre><h2 id="8-防火墙"><a href="#8-防火墙" class="headerlink" title="8.防火墙"></a>8.防火墙</h2><pre><code># 开启防火墙systemctl start 服务名# 关闭防火期（服务器重启还是会自动开启）systemctl stop firewalld # 禁止防火墙开机启动systemctl disable firewlld</code></pre><h2 id="9-查看主机名"><a href="#9-查看主机名" class="headerlink" title="9.查看主机名"></a>9.查看主机名</h2><pre><code>hostname# 设置主机名hostnamectl set-hostname 主机名</code></pre><h3 id="必要软件安装"><a href="#必要软件安装" class="headerlink" title="必要软件安装"></a>必要软件安装</h3><p>1.vim（vi增强版）</p><pre><code>vim 文件名</code></pre><p>2.wget(下载器)</p><pre><code>wget url</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> Liunx </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Liunx命令 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Docker常用命令</title>
+      <link href="/2023/01/10/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/01/10/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<p>时不时的会使用docker 所有整理(复制粘贴)一下常用命令。</p><h2 id="镜像相关"><a href="#镜像相关" class="headerlink" title="镜像相关"></a>镜像相关</h2><h3 id="查看镜像列表"><a href="#查看镜像列表" class="headerlink" title="查看镜像列表"></a>查看镜像列表</h3><pre><code>docker images</code></pre><h3 id="镜像搜索"><a href="#镜像搜索" class="headerlink" title="镜像搜索"></a>镜像搜索</h3><pre><code>docker search 镜像名</code></pre><h3 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h3><pre><code>docker pull 镜像名docker pull:Tag 镜像名</code></pre><h3 id="删除镜像"><a href="#删除镜像" class="headerlink" title="删除镜像"></a>删除镜像</h3><pre><code>docker rmi -f 镜像名/镜像ID</code></pre><h3 id="保存镜像"><a href="#保存镜像" class="headerlink" title="保存镜像"></a>保存镜像</h3><p>将镜像保存为tar压缩文件 方便在任意安装了docker的电脑&#x2F;服务器上加载这个镜像</p><pre><code>docker save 镜像名/镜像ID -o 镜像目录/镜像名字</code></pre><h3 id="加载镜像"><a href="#加载镜像" class="headerlink" title="加载镜像"></a>加载镜像</h3><pre><code>docker load -i 镜像保存文件位置</code></pre><h2 id="容器相关"><a href="#容器相关" class="headerlink" title="容器相关"></a>容器相关</h2><h3 id="容器列表"><a href="#容器列表" class="headerlink" title="容器列表"></a>容器列表</h3><pre><code>docker psdocker ps -a # 查看所有容器——包括运行中和停止的容器</code></pre><h3 id="创建容器"><a href="#创建容器" class="headerlink" title="创建容器"></a>创建容器</h3><pre><code>docker run -it -d --name 名字 -p 宿主机端口:容器端口 -v 宿主机文件存储位置:容器内文件位置 镜像名:Tag /bin/bash</code></pre><table><thead><tr><th align="center">参数</th><th align="center">描述</th></tr></thead><tbody><tr><td align="center">-it</td><td align="center">表示与容器进行交互式启动</td></tr><tr><td align="center">-d</td><td align="center">表示可后台运行容器（守护式容器）</td></tr><tr><td align="center">–name</td><td align="center">给运要行的容器起的名字</td></tr><tr><td align="center">&#x2F;bin&#x2F;bash</td><td align="center">交互路径</td></tr><tr><td align="center">-p</td><td align="center">将容器的端口映射到宿主机上，通过宿主机访问内部端口</td></tr><tr><td align="center">-v</td><td align="center">将容器内的指定文件夹挂载到宿主机对于的位置</td></tr></tbody></table><h3 id="停止容器"><a href="#停止容器" class="headerlink" title="停止容器"></a>停止容器</h3><pre><code>docker stop 容器名/容器ID</code></pre><h3 id="删除容器"><a href="#删除容器" class="headerlink" title="删除容器"></a>删除容器</h3><pre><code># 删除一个容器docker rm -f 容器名/容器ID# 删除多个容器docker rm -f 容器名1/容器ID1 容器名2/容器ID2 容器名3/容器ID3# 删除全部容器docker rm -f $(docker ps -aq)</code></pre><h3 id="进入运行中的容器"><a href="#进入运行中的容器" class="headerlink" title="进入运行中的容器"></a>进入运行中的容器</h3><pre><code>docker attach 容器名/容器ID</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Docker命令 </tag>
+            
+        </tags>
       
     </entry>
     
