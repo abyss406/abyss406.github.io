@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Unity暂停游戏，退出游戏</title>
+      <link href="/2023/01/13/Unity%E6%9A%82%E5%81%9C%E6%B8%B8%E6%88%8F%EF%BC%8C%E9%80%80%E5%87%BA%E6%B8%B8%E6%88%8F/"/>
+      <url>/2023/01/13/Unity%E6%9A%82%E5%81%9C%E6%B8%B8%E6%88%8F%EF%BC%8C%E9%80%80%E5%87%BA%E6%B8%B8%E6%88%8F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-暂停游戏"><a href="#1-暂停游戏" class="headerlink" title="1.暂停游戏"></a>1.暂停游戏</h2><pre><code class="c#">Time.timeScale =0;</code></pre><h2 id="2-继续游戏"><a href="#2-继续游戏" class="headerlink" title="2.继续游戏"></a>2.继续游戏</h2><pre><code class="c#">Time.timeScale =1;</code></pre><h2 id="3-重新开始"><a href="#3-重新开始" class="headerlink" title="3.重新开始"></a>3.重新开始</h2><pre><code class="c#">using UnityEngine.SceneManagement;SceneManager.LoadScene(0);// 0为游戏场景索引</code></pre><h2 id="4-退出游戏"><a href="#4-退出游戏" class="headerlink" title="4.退出游戏"></a>4.退出游戏</h2><pre><code class="c#">Application.Quit();</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity代码 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Liun常用命令</title>
       <link href="/2023/01/10/Liun%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
       <url>/2023/01/10/Liun%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
