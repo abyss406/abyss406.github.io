@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Liunx常用命令 | 一名萌新程序员的博客</title>
-  <meta name="keywords" content=" Liunx命令 ">
-  <meta name="description" content="Liunx常用命令 | 一名萌新程序员的博客">
+  <title>Instantiate() 克隆对象函数用法 | 一名萌新程序员的博客</title>
+  <meta name="keywords" content=" Unity代码 ">
+  <meta name="description" content="Instantiate() 克隆对象函数用法 | 一名萌新程序员的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="在学习unity游戏制作中 Instantiate 函数是很常用的  故此记录一下使用方法。 Instantiate  这里就记录最常用的几种重载 1.Instantiate(Object original);  2.Instantiate(Object original, Transform parent);  3.Instantiate(Object original, Transform p">
 <meta property="og:type" content="article">
@@ -288,9 +288,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Liunx常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Instantiate-克隆对象函数用法" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Liunx常用命令</h1>
+        <h1 class="article-title">Instantiate() 克隆对象函数用法</h1>
     
     <div class="article-meta">
         
@@ -300,7 +300,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Liunx">Liunx</a>
+            <a  data-rel="Unity">Unity</a>
             
         </span>
         
@@ -308,19 +308,19 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">Liunx命令</a>
+            <a class="color3">Unity代码</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-01-13 16:11:18'>2023-01-10 12:57</time>
+            发布时间 : <time class="date" title='最后更新: 2023-01-18 17:25:09'>2023-01-18 17:13</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:697</span>
+        <span>字数:121</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -339,7 +339,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%B3%BB%E7%BB%9F%E5%91%BD%E4%BB%A4"><span class="toc-text">1.系统命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2ip%E5%9C%B0%E5%9D%80"><span class="toc-text">查询ip地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ping%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95%E8%BF%9E%E9%80%9A"><span class="toc-text">ping网络测试连通</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4"><span class="toc-text">查询系统时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E9%94%80"><span class="toc-text">注销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AF"><span class="toc-text">重启</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%85%E5%B1%8F"><span class="toc-text">清屏</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4"><span class="toc-text">2.文件管理命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8"><span class="toc-text">查看文件列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E7%9B%AE%E5%BD%95"><span class="toc-text">切换目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E5%91%BD%E4%BB%A4%E6%89%80%E5%9C%A8%E7%9B%AE%E5%BD%95"><span class="toc-text">查看当前命令所在目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">删除文件&#x2F;文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%B7%E8%B4%9D%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">拷贝文件&#x2F;文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">新建文件&#x2F;文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E6%96%87%E4%BB%B6-x2F-%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-text">移动文件&#x2F;文件夹</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4"><span class="toc-text">3.文本内容查看命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE"><span class="toc-text">4.文件查找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86"><span class="toc-text">5.系统管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%8E%8B%E7%BC%A9%E8%A7%A3%E5%8E%8B%E7%BC%A9"><span class="toc-text">6.压缩解压缩</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-yum%E5%91%BD%E4%BB%A4"><span class="toc-text">7.yum命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E9%98%B2%E7%81%AB%E5%A2%99"><span class="toc-text">8.防火墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E6%9F%A5%E7%9C%8B%E4%B8%BB%E6%9C%BA%E5%90%8D"><span class="toc-text">9.查看主机名</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%85%E8%A6%81%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85"><span class="toc-text">必要软件安装</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-text">参数：</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -355,142 +355,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-系统命令"><a href="#1-系统命令" class="headerlink" title="1.系统命令"></a>1.系统命令</h2><h3 id="查询ip地址"><a href="#查询ip地址" class="headerlink" title="查询ip地址"></a>查询ip地址</h3><pre><code>ip a
-ip addr
-</code></pre>
-<h3 id="ping网络测试连通"><a href="#ping网络测试连通" class="headerlink" title="ping网络测试连通"></a>ping网络测试连通</h3><pre><code>ip 目标ip地址
-ping 目标网址
-</code></pre>
-<h3 id="查询系统时间"><a href="#查询系统时间" class="headerlink" title="查询系统时间"></a>查询系统时间</h3><pre><code>date
-</code></pre>
-<h3 id="注销"><a href="#注销" class="headerlink" title="注销"></a>注销</h3><pre><code>logout
-</code></pre>
-<h3 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h3><pre><code>reboot
-</code></pre>
-<h3 id="清屏"><a href="#清屏" class="headerlink" title="清屏"></a>清屏</h3><pre><code>clean
-</code></pre>
-<h2 id="2-文件管理命令"><a href="#2-文件管理命令" class="headerlink" title="2.文件管理命令"></a>2.文件管理命令</h2><h3 id="查看文件列表"><a href="#查看文件列表" class="headerlink" title="查看文件列表"></a>查看文件列表</h3><pre><code># 查看当前目录下的文件列表
-ls
-# 查看指定目录文件列表
-ls /date
-# 查看详细信息（用户、组、大小、创建时间、权限信息、文件类型）
-ls -l
-# 查看隐藏文件
-ls -a
-# 参数并用
-ls -la
-</code></pre>
-<h3 id="切换目录"><a href="#切换目录" class="headerlink" title="切换目录"></a>切换目录</h3><pre><code>cd 目标文件夹
-</code></pre>
-<h3 id="查看当前命令所在目录"><a href="#查看当前命令所在目录" class="headerlink" title="查看当前命令所在目录"></a>查看当前命令所在目录</h3><pre><code>pwd
-</code></pre>
-<h3 id="删除文件-x2F-文件夹"><a href="#删除文件-x2F-文件夹" class="headerlink" title="删除文件&#x2F;文件夹"></a>删除文件&#x2F;文件夹</h3><pre><code>rm 文件名
-rm -r 文件夹
-# 强制删除不询问
-rm -rf 文件 
-</code></pre>
-<h3 id="拷贝文件-x2F-文件夹"><a href="#拷贝文件-x2F-文件夹" class="headerlink" title="拷贝文件&#x2F;文件夹"></a>拷贝文件&#x2F;文件夹</h3><pre><code>cp 原文件 新文件
-cp -r 原文件夹 新文件夹
-</code></pre>
-<h3 id="新建文件-x2F-文件夹"><a href="#新建文件-x2F-文件夹" class="headerlink" title="新建文件&#x2F;文件夹"></a>新建文件&#x2F;文件夹</h3><pre><code># 在当前目录下创建文件夹
-mkdir 文件夹名
-# 在指定目录 创建文件夹并创建父文件夹
-mkdir -p /路径/路径/文件夹名
-# 在当前目录创建文件
-touch 文件名	 
-</code></pre>
-<h3 id="移动文件-x2F-文件夹"><a href="#移动文件-x2F-文件夹" class="headerlink" title="移动文件&#x2F;文件夹"></a>移动文件&#x2F;文件夹</h3><pre><code># 移动原文件到目标文件夹中
-mv 文件 文件夹	
-# 修改文件A的名字为文件B
-mv 文件A 文件B	
-</code></pre>
-<h2 id="3-文本内容查看命令"><a href="#3-文本内容查看命令" class="headerlink" title="3.文本内容查看命令"></a>3.文本内容查看命令</h2><pre><code># 查看文件中的全部信息
-cat 文件名
-# 以分页的方式浏览文件信息
-less
-#	浏览模式快捷键
-⬆️	# 上一行
-⬇️	# 下一行
-G		# 最后一页
-g		# 第一页
-空格 # 下一页
-/关键词	# 搜索关键词
-# 退出浏览模式
-q
-</code></pre>
-<h2 id="4-文件查找"><a href="#4-文件查找" class="headerlink" title="4.文件查找"></a>4.文件查找</h2><pre><code>find 搜索路径 -name &quot;文件名关键词&quot;
-# 例 find /root/test -name &quot;config.json&quot;
-</code></pre>
-<h2 id="5-系统管理"><a href="#5-系统管理" class="headerlink" title="5.系统管理"></a>5.系统管理</h2><pre><code># 静态查看系统进程
-ps -aux
+        <p>在学习unity游戏制作中 Instantiate 函数是很常用的  故此记录一下使用方法。</p>
+<p>Instantiate  这里就记录最常用的几种重载</p>
+<pre><code>1.Instantiate(Object original);
 
-# 实时查看系统进程
-top  # q 退出
+2.Instantiate(Object original, Transform parent);
 
-# 关闭进程
-kill 进程id
+3.Instantiate(Object original, Transform parent, bool instantiateInWorldSpace);
 
-# 强制关闭进程
-kill -9 进程
+4.Instantiate(Object original, Vector3 position, Quaternion rotation);
+
+5.Instantiate(Object original, Vector3 position, Quaternion rotation, Transform parent);
 </code></pre>
-<h2 id="6-压缩解压缩"><a href="#6-压缩解压缩" class="headerlink" title="6.压缩解压缩"></a>6.压缩解压缩</h2><pre><code>压缩：tar -zcvf 压缩后文件名 被压缩文件
-解压缩：tar -zxvf 压缩文件名 -C 解压缩文件所在目录	
--C # 指定解压后的文件存放位置
-</code></pre>
-<table>
-<thead>
-<tr>
-<th align="center">参数</th>
-<th align="center">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">-z</td>
-<td align="center">操作tar.gz文件需要使用</td>
-</tr>
-<tr>
-<td align="center">-x</td>
-<td align="center">解压缩</td>
-</tr>
-<tr>
-<td align="center">-c</td>
-<td align="center">压缩</td>
-</tr>
-<tr>
-<td align="center">-v</td>
-<td align="center">显示压缩或者解压缩的执行过程信息</td>
-</tr>
-<tr>
-<td align="center">-f</td>
-<td align="center">要处理的文件file，必须放在最后</td>
-</tr>
-</tbody></table>
-<h2 id="7-yum命令"><a href="#7-yum命令" class="headerlink" title="7.yum命令"></a>7.yum命令</h2><pre><code># 列出所有可安装的软件包
-yum list
-# 安装软件
-yum install -y 软件名
-# 卸载软件
-yum remove 软件名
-# 查找软件包
-yum search all 软件名
-</code></pre>
-<h2 id="8-防火墙"><a href="#8-防火墙" class="headerlink" title="8.防火墙"></a>8.防火墙</h2><pre><code># 开启防火墙
-systemctl start 服务名
-# 关闭防火期（服务器重启还是会自动开启）
-systemctl stop firewalld 
-# 禁止防火墙开机启动
-systemctl disable firewlld
-</code></pre>
-<h2 id="9-查看主机名"><a href="#9-查看主机名" class="headerlink" title="9.查看主机名"></a>9.查看主机名</h2><pre><code>hostname
-# 设置主机名
-hostnamectl set-hostname 主机名
-</code></pre>
-<h3 id="必要软件安装"><a href="#必要软件安装" class="headerlink" title="必要软件安装"></a>必要软件安装</h3><p>1.vim（vi增强版）</p>
-<pre><code>vim 文件名
-</code></pre>
-<p>2.wget(下载器)</p>
-<pre><code>wget url
-</code></pre>
+<h2 id="参数："><a href="#参数：" class="headerlink" title="参数："></a>参数：</h2><p>object original 被克隆的对象 </p>
+<p>Transform parent 克隆出的对象归属于父物体</p>
+<p>Vector3 position 克隆对象的位置</p>
+<p>Quaternion rotation 克隆对象的旋转状态</p>
 
       
        

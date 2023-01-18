@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Instantiate() 克隆对象函数用法</title>
+      <link href="/2023/01/18/Instantiate-%E5%85%8B%E9%9A%86%E5%AF%B9%E8%B1%A1%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95/"/>
+      <url>/2023/01/18/Instantiate-%E5%85%8B%E9%9A%86%E5%AF%B9%E8%B1%A1%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<p>在学习unity游戏制作中 Instantiate 函数是很常用的  故此记录一下使用方法。</p><p>Instantiate  这里就记录最常用的几种重载</p><pre><code>1.Instantiate(Object original);2.Instantiate(Object original, Transform parent);3.Instantiate(Object original, Transform parent, bool instantiateInWorldSpace);4.Instantiate(Object original, Vector3 position, Quaternion rotation);5.Instantiate(Object original, Vector3 position, Quaternion rotation, Transform parent);</code></pre><h2 id="参数："><a href="#参数：" class="headerlink" title="参数："></a>参数：</h2><p>object original 被克隆的对象 </p><p>Transform parent 克隆出的对象归属于父物体</p><p>Vector3 position 克隆对象的位置</p><p>Quaternion rotation 克隆对象的旋转状态</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity代码 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Unity暂停游戏，退出游戏</title>
       <link href="/2023/01/13/Unity%E6%9A%82%E5%81%9C%E6%B8%B8%E6%88%8F%EF%BC%8C%E9%80%80%E5%87%BA%E6%B8%B8%E6%88%8F/"/>
       <url>/2023/01/13/Unity%E6%9A%82%E5%81%9C%E6%B8%B8%E6%88%8F%EF%BC%8C%E9%80%80%E5%87%BA%E6%B8%B8%E6%88%8F/</url>
