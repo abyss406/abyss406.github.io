@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>unity 简单计数器</title>
+      <link href="/2023/01/24/unity-%E7%AE%80%E5%8D%95%E8%AE%A1%E6%95%B0%E5%99%A8/"/>
+      <url>/2023/01/24/unity-%E7%AE%80%E5%8D%95%E8%AE%A1%E6%95%B0%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<p>利用System.TimeSpan在游戏中做一个简单的计时器 </p><pre><code class="c#">    [SerializeField] Text timeText;     private float clearTime;    private void FixedUpdate()    &#123;        clearTime += Time.fixedDeltaTime;        timeText.text = System.TimeSpan.FromSeconds(clearTime).ToString(@&quot;mm\:ss\:ff&quot;);    &#125;</code></pre><p>效果如下：</p><p><img src="D:\blog\img\动画.gif"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Unity </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Unity代码 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Instantiate() 克隆对象函数用法</title>
       <link href="/2023/01/18/Instantiate-%E5%85%8B%E9%9A%86%E5%AF%B9%E8%B1%A1%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95/"/>
       <url>/2023/01/18/Instantiate-%E5%85%8B%E9%9A%86%E5%AF%B9%E8%B1%A1%E5%87%BD%E6%95%B0%E7%94%A8%E6%B3%95/</url>
